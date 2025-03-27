@@ -118,17 +118,54 @@ h1 {
   margin-top: auto;
 }
 
+.s-grid article a:hover {
+  /* switch atributes */
+}
+
+.my-work h2, .my-work p {
+  background-color: aqua;
+  text-align: center;
+  /* must add max width*/
+}
+
+#work img {
+  width: 100%;
+}
+
+#work .img-grid {
+  background-color: aquamarine;
+  display: grid;
+  /* display: flex; */
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
 
 
 
 
+/* .img-grid {
+  background-color: blue;
+  display: grid;
+  max-width: 940px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
 
+.img-grid {
+  grid-template-areas: 
+    "img1 img2 img3 img4 img5"
+  ;
+}
 
+grid-template-areas: 
+"img1 img2"
+"img3 img4 img5"
+; */
 
 
 
 footer {
-  background-color: #000;
+  background-color: red;
   color: #fff;
   text-align: center;
 }
