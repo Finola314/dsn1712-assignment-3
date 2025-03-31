@@ -145,9 +145,38 @@ h1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "div1 div2 div3 div4 div5"
+  ;
+  grid-template-areas: 
+    "div1 div1 div1 div2 div2 div2"
+    "div3 div3 div4 div4 div5 div5"
+  ;
 }
 
 #work .img-grid :nth-child(1) {
+  grid-area: div1;
+}
+
+#work .img-grid :nth-child(2) {
+  grid-area: div2;
+}
+
+#work .img-grid :nth-child(3) {
+  grid-area: div3;
+}
+
+#work .img-grid :nth-child(4) {
+  grid-area: div4;
+}
+
+#work .img-grid :nth-child(5) {
+  grid-area: div5;
+}
+
+
+
+/* #work .img-grid :nth-child(1) {
   grid-column: 1 / 4
 }
 
@@ -166,7 +195,7 @@ h1 {
 
 #work .img-grid :nth-child(5) {
   grid-column: 5 / -1
-}
+} */
 
 footer {
   background-color: black;
